@@ -20,14 +20,18 @@ namespace improvedDice
 
             if (roll1 == roll2 || roll2 == roll3 || roll3 == roll1)
             {
-                Console.WriteLine("You rolled doubles! Now, you have +2 points.");
-                result = result + 2;
+                if (roll1 == roll2 && roll2 == roll3)
+                {
+                    Console.WriteLine("You rolled triples! Now, you have +5 points.");
+                    result = result + 5;
+                }
+                else
+                {
+                    Console.WriteLine("You rolled doubles! Now, you have +2 points.");
+                    result = result + 2;
+                }
             }
-            if (roll1 == roll2 && roll2 == roll3)
-            {
-                Console.WriteLine("You rolled triples! Now, you have +5 points.");
-                result = result + 5;
-            }
+
             if (result >= 15)
             {
                 Console.WriteLine($"Congratulation, you win this game with {result} points.");
