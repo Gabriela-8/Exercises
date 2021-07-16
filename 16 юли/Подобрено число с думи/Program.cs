@@ -16,7 +16,7 @@ namespace improvedNumberWithWords
 
             if (suppportNum >= 1 && suppportNum <= 100000)
             {
-                string[] num1 = new string[] { ",", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeeen", "eighteen", "nineteen" };
+                string[] num1 = new string[] { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeeen", "eighteen", "nineteen" };
                 string[] num2 = new string[] { ",", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety" };
                 string numWithWords = "";
 
